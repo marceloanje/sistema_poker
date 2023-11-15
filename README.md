@@ -10,6 +10,8 @@ O **Poker Face** é um sistema de simulação de poker projetado para proporcion
 - **Tomada de Decisão Automatizada**: O sistema automatiza a etapa de decisão, determinando o vencedor de cada rodada com base nas cartas e nas apostas dos participantes.
 - **Dinheiro Virtual**: Os jogadores podem desfrutar da emoção do jogo sem risco financeiro, pois o sistema utiliza dinheiro virtual.
 
+---
+
 ### Complexidade Temporal e Espacial
 
 #### Complexidade Temporal
@@ -19,6 +21,8 @@ A complexidade temporal do programa é \( O(n^2) \), onde \( n \) é o tamanho d
 #### Complexidade Espacial
 
 A complexidade espacial do programa é \( O(n) \), onde \( n \) é o tamanho da entrada. Isso indica que a quantidade de espaço de memória necessária pelo programa aumenta linearmente com o tamanho da entrada.
+
+---
 
 ### Instruções de Execução
 
