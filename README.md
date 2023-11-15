@@ -50,7 +50,7 @@ Certifique-se de ter os seguintes requisitos instalados no seu sistema:
 3. **Compilação e Exucução**       
    Execute o comando make na pasta raiz do projeto para compilar e executar o código.
    ```bash
-   make
+   make run
    ```
 
 ---
