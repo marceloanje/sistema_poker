@@ -52,3 +52,9 @@ Certifique-se de ter os seguintes requisitos instalados no seu sistema:
    ```bash
    make
    ```
+
+---
+
+### Mais Detalhes
+
+Um documento PDF contendo detalhes adicionais sobre o trabalho está disponível [aqui](link_para_o_pdf). Esse documento oferece uma visão mais abrangente do projeto, incluindo descrições detalhadas, especificações técnicas e outras informações relevantes.
