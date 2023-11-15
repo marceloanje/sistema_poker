@@ -33,7 +33,7 @@ Certifique-se de ter os seguintes requisitos instalados no seu sistema:
    cd sistema_poker
    ```
 
-3. **Compilação e Exucução**
+3. **Compilação e Exucução**       
    Execute o comando make na pasta raiz do projeto para compilar e executar o código.
    ```bash
    make
