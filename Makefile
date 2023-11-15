@@ -1,26 +1,23 @@
 CC = g++
-LIBS = -lm
-SRC = src
-OBJ = obj
-INC = include
-BIN = bin
-OBJS = $(OBJ)/main.o $(OBJ)/headers.o
-HDRS = $(INC)/headers.h
-CFLAGS = -Wall -c -I$(INC)
 
-EXE = $(BIN)/main
+CFLAGS = -Wall -std=c++11
 
-all: $(EXE)
-	$(EXE)
-	
-$(BIN)/main: $(OBJS)
-	$(CC) -o $(BIN)/main $(OBJS) $(LIBS)
 
-$(OBJ)/main.o: $(HDRS) $(SRC)/main.cpp
-	$(CC) $(CFLAGS) -o $(OBJ)/main.o $(SRC)/main.cpp 
+TARGET = meu_programa
 
-$(OBJ)/headers.o: $(HDRS) $(SRC)/headers.cpp
-	$(CC) $(CFLAGS) -o $(OBJ)/headers.o $(SRC)/headers.cpp 
+
+SOURCES = headers.cpp main.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SOURCES:.cpp=.o)
+	$(CC) $(CFLAGS) $^ -o $@
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
+run: $(TARGET)
+	./$(TARGET)
 
 clean:
-	rm $(EXE) $(OBJS)
+	rm -f $(TARGET) $(SOURCES:.cpp=.o)
